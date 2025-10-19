@@ -5,7 +5,7 @@ import NewsCard from '../NewsCard';
 const CategoryNews = () => {
   const categories = [
   {
-    "id": 0,
+    "id": 0, 
     "name": "All News"
   },
   {

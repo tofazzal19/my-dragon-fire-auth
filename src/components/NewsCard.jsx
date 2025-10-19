@@ -44,7 +44,7 @@ const NewsCard = ({news, title}) => {
   };
 
   return (
-    <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
+    <div className="max-w-4xl mx-auto bg-base-100 rounded-lg shadow-md overflow-hidden border border-gray-200">
       {/* Header with category and date */}
       <div className="bg-gray-100 px-6 py-3 flex justify-between items-center">
         <span className="text-sm font-semibold text-blue-600 uppercase tracking-wide">

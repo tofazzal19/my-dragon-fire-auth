@@ -4,10 +4,10 @@ import Categories from '../Categories';
 const LeftAside = () => {
     return (
         <div>
-            <Suspense fallback={<span className="loading loading-spinner text-error"></span>}>
+            <Suspense fallback={<span className="loading loading-spinner text-accent loading-xl"></span>}
+            >
                 <Categories></Categories>
-            </Suspense>
-            
+            </Suspense> 
         </div>
     );
 };
