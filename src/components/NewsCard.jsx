@@ -1,7 +1,8 @@
 import { FaBookmark, FaShareAlt, FaEye, FaStar } from 'react-icons/fa';
 import { useState } from 'react';
+import { Link } from 'react-router';
 
-const NewsCard = ({news, title}) => {
+const NewsCard = ({news, title, id}) => {
   const [isBookmarked, setIsBookmarked] = useState(false);
   
   const newsData = {
@@ -143,9 +144,9 @@ const NewsCard = ({news, title}) => {
             </div>
             
             {/* Optional: Add read more button */}
-            <button className="text-blue-600 hover:text-blue-800 font-medium text-sm">
+            <Link to={`/news-details/${id}`} className="text-blue-600 hover:text-blue-800 font-medium text-sm">
               Read Full Story →
-            </button>
+            </Link>
           </div>
         </div>
       </div>
